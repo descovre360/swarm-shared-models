@@ -1,2 +1,2 @@
 # swarm-shared-models
-The shared RoR models used by the Next Gen application.
+The shared RoR models and migrations used by the Next Gen application.
