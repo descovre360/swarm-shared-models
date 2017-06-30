@@ -2,7 +2,13 @@ PATH
   remote: .
   specs:
     swarm-shared-models (0.1.0)
+      bundler
+      devise
+      minitest
+      mysql2
       rails (= 5.0.0.1)
+      rake
+      rubocop
 
 GEM
   remote: https://rubygems.org/
@@ -106,7 +112,7 @@ GEM
       thor (>= 0.18.1, < 2.0)
     rainbow (2.2.2)
       rake
-    rake (10.5.0)
+    rake (12.0.0)
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
@@ -140,12 +146,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  bundler
-  devise
-  minitest
-  mysql2
-  rake
-  rubocop
   swarm-shared-models!
 
 BUNDLED WITH
