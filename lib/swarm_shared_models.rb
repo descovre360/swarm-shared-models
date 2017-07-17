@@ -11,4 +11,7 @@ module SwarmSharedModels
   autoload :Source, 'swarm_shared_models/source'
   autoload :VisualizationGroup, 'swarm_shared_models/visualization_group'
   autoload :Visualization, 'swarm_shared_models/visualization'
+  autoload :UserRole, 'swarm_shared_models/user_role'
+  autoload :UserPreference, 'swarm_shared_models/user_preference'
+  autoload :DashboardPane, 'swarm_shared_models/dashboard_pane'
 end
