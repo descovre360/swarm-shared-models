@@ -1,6 +1,7 @@
 module SwarmSharedModels
   VERSION = "0.1.0"
   # Your code goes here...
+  autoload :ApplicationRecord, 'swarm_shared_models/application_record'
   autoload :DashboardPane, 'swarm_shared_models/dashboard_pane'
   autoload :FeedGroup, 'swarm_shared_models/feed_group'
   autoload :FeedSource, 'swarm_shared_models/feed_source'
