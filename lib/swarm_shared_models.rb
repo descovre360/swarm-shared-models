@@ -1,17 +1,19 @@
 module SwarmSharedModels
   VERSION = "0.1.0"
   # Your code goes here...
-  autoload :Tenant, 'swarm_shared_models/tenant'
+  autoload :DashboardPane, 'swarm_shared_models/dashboard_pane'
+  autoload :FeedGroup, 'swarm_shared_models/feed_group'
+  autoload :FeedSource, 'swarm_shared_models/feed_source'
   autoload :History, 'swarm_shared_models/history'
-  autoload :Preference, 'swarm_shared_models/preference'
   autoload :Permission, 'swarm_shared_models/permission'
+  autoload :Preference, 'swarm_shared_models/preference'
   autoload :ReleaseNote, 'swarm_shared_models/release_note'
   autoload :Role, 'swarm_shared_models/role'
   autoload :SourceGroup, 'swarm_shared_models/source_group'
   autoload :Source, 'swarm_shared_models/source'
+  autoload :Tenant, 'swarm_shared_models/tenant'
+  autoload :UserPreference, 'swarm_shared_models/user_preference'
+  autoload :UserRole, 'swarm_shared_models/user_role'
   autoload :VisualizationGroup, 'swarm_shared_models/visualization_group'
   autoload :Visualization, 'swarm_shared_models/visualization'
-  autoload :UserRole, 'swarm_shared_models/user_role'
-  autoload :UserPreference, 'swarm_shared_models/user_preference'
-  autoload :DashboardPane, 'swarm_shared_models/dashboard_pane'
 end
