@@ -13,6 +13,7 @@ module SwarmSharedModels
   autoload :SourceGroup, 'swarm_shared_models/source_group'
   autoload :Source, 'swarm_shared_models/source'
   autoload :Tenant, 'swarm_shared_models/tenant'
+  autoload :TenantSourceAssignment, 'swarm_shared_models/tenant_source_assignment'
   autoload :UserPreference, 'swarm_shared_models/user_preference'
   autoload :UserRole, 'swarm_shared_models/user_role'
   autoload :VisualizationGroup, 'swarm_shared_models/visualization_group'
