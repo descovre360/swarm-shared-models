@@ -18,4 +18,5 @@ module SwarmSharedModels
   autoload :UserRole, 'swarm_shared_models/user_role'
   autoload :VisualizationGroup, 'swarm_shared_models/visualization_group'
   autoload :Visualization, 'swarm_shared_models/visualization'
+  autoload :UserVisit, 'swarm_shared_models/user_visit'
 end
