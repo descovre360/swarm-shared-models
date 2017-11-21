@@ -8,5 +8,9 @@ module SwarmSharedModels
       owner_user_role && owner_user_role.user
     end
 
+    def owners
+      UserRole.where(role_id: Role.where(name: 'Owner').first.id, user_id: users.pluck(:id)).includes(:user).map{|user_role| user_role.user}
+    end
+
   end
 end
