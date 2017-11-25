@@ -1,6 +1,7 @@
 module SwarmSharedModels
   class LicenseRequest < ApplicationRecord
     has_paper_trail
+    default_scope -> {order(:created_at)}
     scope :pending, -> {where(approved_at: nil, denied_at: nil)}
     scope :approved, -> {where.not(approved_at: nil)}
 
