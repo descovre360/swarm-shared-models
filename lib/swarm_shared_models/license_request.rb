@@ -3,7 +3,7 @@ module SwarmSharedModels
     has_paper_trail
     default_scope -> {order(:created_at)}
     scope :pending, -> {where(approved_at: nil, denied_at: nil)}
-    scope :approved, -> {where.not(approved_at: nil)}
+    scope :approved, -> {where.not(approved_at: nil).where(revoked_by: nil)}
 
     has_one :approver, class_name: "User", foreign_key: :id, primary_key: :approved_by
     has_one :denier, class_name: "User", foreign_key: :id, primary_key: :denied_by
