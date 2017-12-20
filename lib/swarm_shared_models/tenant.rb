@@ -13,7 +13,7 @@ module SwarmSharedModels
     end
 
     def tenant_users
-      UserRole.where(role_id: Role.where(name: 'Owner').first.id, user_id: users.pluck(:id)).includes(:user).map{|user_role| user_role.user}
+      UserRole.where(tenant_id: self.id).uniq
     end
 
   end
