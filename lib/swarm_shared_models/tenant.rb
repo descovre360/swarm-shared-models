@@ -13,7 +13,7 @@ module SwarmSharedModels
     end
 
     def tenant_users
-      UserRole.where(tenant_id: self.id).uniq
+      UserRole.where(tenant_id: current_user.tenant_id).uniq
     end
 
   end
