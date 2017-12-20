@@ -13,7 +13,7 @@ module SwarmSharedModels
     end
 
     def tenant_users
-      User.all.uniq
+      self.users
     end
 
   end
