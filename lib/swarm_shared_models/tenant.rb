@@ -12,5 +12,9 @@ module SwarmSharedModels
       UserRole.where(role_id: Role.where(name: 'Owner').first.id, user_id: users.pluck(:id)).includes(:user).map{|user_role| user_role.user}
     end
 
+    def tenant_users
+      UserRole.where(role_id: Role.where(name: 'Owner').first.id, user_id: users.pluck(:id)).includes(:user).map{|user_role| user_role.user}
+    end
+
   end
 end
