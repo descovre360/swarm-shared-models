@@ -8,7 +8,7 @@ module SwarmSharedModels
     belongs_to :user
     belongs_to :role
 
-    before_save :check_for_current_user_id
+    #before_save :check_for_current_user_id
 
     after_save :set_owner_dependency_roles, if: Proc.new { |user_role| user_role.role_id == Role::OWNER_USER_ROLE.id }
     after_save :set_full_user_dependency_roles, if: Proc.new { |user_role| user_role.role_id == Role::FULL_USER_ROLE.id }
