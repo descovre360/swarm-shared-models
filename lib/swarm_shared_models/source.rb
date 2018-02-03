@@ -9,6 +9,7 @@ module SwarmSharedModels
 
     belongs_to :source_group
 
+    scope :generic, -> {where.not(source_key: 'custom-self-upload')}
     scope :by_source_group_name, -> { joins(:source_group).order('source_groups.name') }
   end
 end
