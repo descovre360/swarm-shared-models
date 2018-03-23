@@ -9,7 +9,7 @@ module SwarmSharedModels
 
     belongs_to :source_group
 
-    scope :generic, -> {where.not(source_group_id: SourceGroup.where(name: 'Custom').first)}
+    scope :generic, -> {where.not(source_group_id: SourceGroup.where(name: 'Custom').first.id)}
     scope :by_source_group_name, -> { joins(:source_group).order('source_groups.name') }
   end
 end
