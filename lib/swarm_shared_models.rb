@@ -20,4 +20,6 @@ module SwarmSharedModels
   autoload :Visualization, 'swarm_shared_models/visualization'
   autoload :UserVisit, 'swarm_shared_models/user_visit'
   autoload :LicenseRequest, 'swarm_shared_models/license_request'
+  autoload :Project, 'swarm_shared_models/project'
+  autoload :Search, 'swarm_shared_models/search'
 end
