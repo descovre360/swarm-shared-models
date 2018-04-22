@@ -7,6 +7,7 @@ module SwarmSharedModels
 
     belongs_to :user
     belongs_to :role
+    has_one :tenant, through: :user
 
     before_save :check_for_current_user_id
 
