@@ -1,5 +1,6 @@
 module SwarmSharedModels
   class FeedSource < ApplicationRecord
+    has_paper_trail
     validates_presence_of :name
     validates_presence_of :url
     validates_presence_of :feed_group

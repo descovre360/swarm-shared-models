@@ -1,5 +1,6 @@
 module SwarmSharedModels
     class UserRole < ApplicationRecord
+    has_paper_trail
     validates_presence_of :user_id
     validates_presence_of :role_id
 

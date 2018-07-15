@@ -1,5 +1,6 @@
 module SwarmSharedModels
   class Preference < ApplicationRecord
+    has_paper_trail
     has_many :user_preferences, dependent: :destroy
     scope :source, -> { where(pkey: 'SOURCE') }
     scope :page_size, -> { where(pkey: 'PGSIZE') }

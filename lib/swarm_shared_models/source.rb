@@ -1,5 +1,6 @@
 module SwarmSharedModels
   class Source < ApplicationRecord
+    has_paper_trail
     validates_presence_of :name
     validates_presence_of :source_key
     validates_presence_of :source_group_id

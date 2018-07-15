@@ -1,5 +1,6 @@
 module SwarmSharedModels
   class UserPreference < ApplicationRecord
+    has_paper_trail
     validates_presence_of :user
     validates_presence_of :preference
 
